@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lunavyren.github.io/cantinho-da-angelica/sitemap.xml
