@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://angelica1690.github.io/cantinho-da-angelica/sitemap.xml
