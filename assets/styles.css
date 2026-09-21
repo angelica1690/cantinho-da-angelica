@@ -777,6 +777,191 @@ h1 em {
   text-align: center;
 }
 
+.support-section {
+  padding: 78px 0;
+  border-top: 1px solid var(--line);
+}
+
+.support-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 58px;
+  overflow: hidden;
+  align-items: center;
+  padding: 46px 52px;
+  border: 1px solid var(--line-strong);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(169, 130, 227, 0.18), transparent 20rem),
+    linear-gradient(145deg, rgba(33, 26, 42, 0.96), rgba(18, 14, 24, 0.98));
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.support-card::before {
+  position: absolute;
+  top: -74px;
+  right: 210px;
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgba(203, 208, 217, 0.1);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 30px rgba(169, 130, 227, 0.04),
+    0 0 0 62px rgba(203, 208, 217, 0.025);
+  content: "";
+  pointer-events: none;
+}
+
+.support-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.support-copy h2 {
+  max-width: 650px;
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.support-copy > p:not(.section-label) {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: var(--muted);
+}
+
+.support-note {
+  display: flex;
+  max-width: 680px;
+  gap: 12px;
+  align-items: flex-start;
+  padding-top: 20px;
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.support-note > span {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--purple);
+  background: rgba(169, 130, 227, 0.12);
+  border-radius: 50%;
+  font-size: 0.76rem;
+}
+
+.support-note p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.support-note strong {
+  color: var(--muted-strong);
+}
+
+.support-pix {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 274px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  border: 1px solid rgba(203, 208, 217, 0.22);
+  background: rgba(15, 11, 22, 0.62);
+  border-radius: 17px;
+  text-align: center;
+}
+
+.pix-placeholder {
+  position: relative;
+  display: grid;
+  width: 142px;
+  height: 142px;
+  margin-bottom: 20px;
+  place-items: center;
+  color: var(--silver-bright);
+  background:
+    linear-gradient(90deg, rgba(203, 208, 217, 0.035) 1px, transparent 1px),
+    linear-gradient(rgba(203, 208, 217, 0.035) 1px, transparent 1px),
+    rgba(203, 208, 217, 0.035);
+  background-size: 12px 12px;
+  border-radius: 12px;
+}
+
+.pix-heart {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--purple);
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+}
+
+.pix-corner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-color: var(--silver);
+  border-style: solid;
+}
+
+.pix-corner-top-left {
+  top: 12px;
+  left: 12px;
+  border-width: 2px 0 0 2px;
+  border-radius: 5px 0 0;
+}
+
+.pix-corner-top-right {
+  top: 12px;
+  right: 12px;
+  border-width: 2px 2px 0 0;
+  border-radius: 0 5px 0 0;
+}
+
+.pix-corner-bottom-left {
+  bottom: 12px;
+  left: 12px;
+  border-width: 0 0 2px 2px;
+  border-radius: 0 0 0 5px;
+}
+
+.pix-corner-bottom-right {
+  right: 12px;
+  bottom: 12px;
+  border-width: 0 2px 2px 0;
+  border-radius: 0 0 5px;
+}
+
+.support-pix > strong,
+.support-pix > span {
+  display: block;
+}
+
+.support-pix > strong {
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.support-pix > span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
 .about-page {
   position: relative;
   overflow: hidden;
@@ -1400,6 +1585,12 @@ h1 em {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .support-card {
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: 34px;
+    padding: 40px;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -1464,6 +1655,19 @@ h1 em {
   .translation-gallery,
   .report-grid {
     grid-template-columns: 1fr;
+  }
+
+  .support-section {
+    padding: 58px 0;
+  }
+
+  .support-card {
+    grid-template-columns: 1fr;
+    padding: 30px 24px;
+  }
+
+  .support-pix {
+    min-height: 252px;
   }
 
   .feedback-card {
