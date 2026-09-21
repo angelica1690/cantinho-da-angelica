@@ -380,6 +380,34 @@ h1 em {
   padding: 23px;
 }
 
+.game-cover-with-art {
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background:
+    linear-gradient(rgba(20, 14, 29, 0.48), rgba(10, 8, 14, 0.78)),
+    url("legend-of-legaia-cover.jpg") center / cover;
+}
+
+.game-cover-with-art::after {
+  z-index: 0;
+  opacity: 1;
+  background: rgba(18, 12, 25, 0.36);
+  backdrop-filter: blur(9px);
+  mask-image: none;
+}
+
+.cover-art {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(237, 240, 244, 0.42);
+  border-radius: 9px;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.5);
+}
+
 .game-cover-project {
   min-height: 430px;
   padding: 30px;
@@ -623,6 +651,35 @@ h1 em {
   background:
     radial-gradient(circle at 78% 15%, rgba(218, 214, 228, 0.34), transparent 25%),
     linear-gradient(145deg, #21162f, #15121e 65%, #38234f);
+}
+
+.project-art-with-cover {
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background:
+    linear-gradient(rgba(22, 15, 31, 0.38), rgba(10, 8, 14, 0.72)),
+    url("legend-of-legaia-cover.jpg") center / cover;
+}
+
+.project-art-with-cover::after {
+  z-index: 0;
+  inset: 0;
+  content: "";
+  background: rgba(16, 11, 22, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.project-art-with-cover > img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 148px;
+  height: 148px;
+  object-fit: cover;
+  border: 1px solid rgba(237, 240, 244, 0.42);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
 }
 
 .project-art::after {
