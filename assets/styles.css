@@ -777,14 +777,14 @@ h1 em {
   text-align: center;
 }
 
-.about-section {
+.about-page {
   position: relative;
   overflow: hidden;
-  padding: 78px 0;
-  border-top: 1px solid var(--line);
+  min-height: calc(100vh - 167px);
+  padding: 72px 0 86px;
 }
 
-.about-section::before {
+.about-page::before {
   position: absolute;
   top: -170px;
   left: -120px;
@@ -797,6 +797,11 @@ h1 em {
   pointer-events: none;
 }
 
+.about-page .back-link {
+  position: relative;
+  margin-bottom: 44px;
+}
+
 .about-grid {
   position: relative;
   display: grid;
@@ -805,6 +810,7 @@ h1 em {
   align-items: start;
 }
 
+.about-heading h1,
 .about-heading h2 {
   max-width: 430px;
   margin: 0;
@@ -1165,7 +1171,7 @@ h1 em {
     min-height: auto;
   }
 
-  .about-section {
+  .about-page {
     padding: 58px 0;
   }
 

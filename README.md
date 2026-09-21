@@ -13,6 +13,7 @@ Quando o GitHub Pages estiver ativado, o endereço será:
 ## Estrutura
 
 - `index.html`: página inicial e catálogo de traduções;
+- `sobre/`: apresentação do Cantinho da Angélica;
 - `projetos/legend-of-legaia/`: página do primeiro projeto;
 - `projetos/legend-of-legaia/instalacao/`: guia de instalação da tradução;
 - `assets/`: estilos, comportamento e identidade visual;
