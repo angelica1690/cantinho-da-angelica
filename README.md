@@ -14,6 +14,7 @@ Quando o GitHub Pages estiver ativado, o endereço será:
 
 - `index.html`: página inicial e catálogo de traduções;
 - `projetos/legend-of-legaia/`: página do primeiro projeto;
+- `projetos/legend-of-legaia/instalacao/`: guia de instalação da tradução;
 - `assets/`: estilos, comportamento e identidade visual;
 - `sitemap.xml` e `robots.txt`: descoberta das páginas por mecanismos de busca.
 
