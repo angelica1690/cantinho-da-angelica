@@ -22,7 +22,7 @@
     });
 
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
+      if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
         closeMenu();
         menuButton.focus();
       }
@@ -58,4 +58,39 @@
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => filterProjects(button.dataset.filter));
   });
+
+  const lightbox = document.querySelector("[data-image-lightbox]");
+  const galleryButtons = [...document.querySelectorAll("[data-gallery-src]")];
+
+  if (lightbox && galleryButtons.length) {
+    const lightboxImage = lightbox.querySelector("[data-lightbox-image]");
+    const lightboxCaption = lightbox.querySelector("[data-lightbox-caption]");
+    const closeButton = lightbox.querySelector("[data-lightbox-close]");
+    let returnFocusTo = null;
+
+    function closeLightbox() {
+      lightbox.close();
+    }
+
+    galleryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        returnFocusTo = button;
+        lightboxImage.src = button.dataset.gallerySrc;
+        lightboxImage.alt = button.dataset.galleryAlt;
+        lightboxCaption.textContent = button.dataset.galleryCaption;
+        lightbox.showModal();
+      });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    lightbox.addEventListener("close", () => {
+      lightboxImage.src = "";
+      if (returnFocusTo) returnFocusTo.focus();
+    });
+  }
 })();
