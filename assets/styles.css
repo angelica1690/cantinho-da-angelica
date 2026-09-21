@@ -777,6 +777,81 @@ h1 em {
   text-align: center;
 }
 
+.about-section {
+  position: relative;
+  overflow: hidden;
+  padding: 78px 0;
+  border-top: 1px solid var(--line);
+}
+
+.about-section::before {
+  position: absolute;
+  top: -170px;
+  left: -120px;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: rgba(169, 130, 227, 0.09);
+  content: "";
+  filter: blur(85px);
+  pointer-events: none;
+}
+
+.about-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.about-heading h2 {
+  max-width: 430px;
+  margin: 0;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.about-signature {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 22px;
+  color: var(--silver);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.about-signature span {
+  color: var(--purple);
+  font-style: normal;
+}
+
+.about-copy {
+  padding: 30px 32px;
+  border: 1px solid var(--line);
+  background: linear-gradient(145deg, rgba(33, 26, 42, 0.82), rgba(24, 19, 31, 0.78));
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.about-copy p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.about-copy p:first-child {
+  color: var(--muted-strong);
+  font-size: 1.03rem;
+}
+
+.about-copy p + p {
+  margin-top: 17px;
+}
+
 .project-hero {
   padding: 72px 0 78px;
 }
@@ -1030,6 +1105,11 @@ h1 em {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
   .project-hero-inner {
     grid-template-columns: 250px minmax(0, 1fr);
     gap: 40px;
@@ -1083,6 +1163,14 @@ h1 em {
 
   .project-card-body > p:not(.project-status) {
     min-height: auto;
+  }
+
+  .about-section {
+    padding: 58px 0;
+  }
+
+  .about-copy {
+    padding: 24px;
   }
 
   .project-hero {
