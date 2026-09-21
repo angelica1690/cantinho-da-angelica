@@ -8,7 +8,7 @@ O site reúne informações, andamento, instruções e downloads dos projetos de
 
 Quando o GitHub Pages estiver ativado, o endereço será:
 
-<https://lunavyren.github.io/cantinho-da-angelica/>
+<https://angelica1690.github.io/cantinho-da-angelica/>
 
 ## Estrutura
 
