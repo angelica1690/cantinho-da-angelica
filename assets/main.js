@@ -59,6 +59,29 @@
     button.addEventListener("click", () => filterProjects(button.dataset.filter));
   });
 
+  const pixCode = document.querySelector("[data-pix-code]");
+  const pixCopyButton = document.querySelector("[data-pix-copy]");
+  const pixStatus = document.querySelector("[data-pix-status]");
+
+  if (pixCode && pixCopyButton && pixStatus) {
+    pixCopyButton.addEventListener("click", async () => {
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(pixCode.value);
+        } else {
+          pixCode.focus();
+          pixCode.select();
+          if (!document.execCommand("copy")) throw new Error("Cópia não permitida");
+        }
+        pixStatus.textContent = "Código Pix copiado. Confira os dados no seu banco antes de confirmar.";
+      } catch {
+        pixCode.focus();
+        pixCode.select();
+        pixStatus.textContent = "Não foi possível copiar automaticamente. Copie o código selecionado acima.";
+      }
+    });
+  }
+
   const lightbox = document.querySelector("[data-image-lightbox]");
   const galleryButtons = [...document.querySelectorAll("[data-gallery-src]")];
 

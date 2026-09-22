@@ -832,6 +832,57 @@ h1 em {
   color: var(--muted);
 }
 
+.pix-copy {
+  max-width: 680px;
+  margin-top: 24px;
+}
+
+.pix-copy label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.pix-copy-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pix-copy-controls input {
+  min-width: 0;
+  min-height: 46px;
+  flex: 1 1 260px;
+  padding: 0 13px;
+  border: 1px solid var(--line-strong);
+  color: var(--muted-strong);
+  background: var(--surface);
+  border-radius: 10px;
+  font-size: 0.82rem;
+}
+
+.pix-copy-controls input:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 2px;
+}
+
+.pix-copy-controls .button {
+  cursor: pointer;
+}
+
+.pix-copy-help,
+.pix-copy-feedback {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.pix-copy-feedback:empty {
+  display: none;
+}
+
 .support-note {
   display: flex;
   max-width: 680px;
@@ -879,69 +930,15 @@ h1 em {
   text-align: center;
 }
 
-.pix-placeholder {
-  position: relative;
-  display: grid;
-  width: 142px;
-  height: 142px;
-  margin-bottom: 20px;
-  place-items: center;
-  color: var(--silver-bright);
-  background:
-    linear-gradient(90deg, rgba(203, 208, 217, 0.035) 1px, transparent 1px),
-    linear-gradient(rgba(203, 208, 217, 0.035) 1px, transparent 1px),
-    rgba(203, 208, 217, 0.035);
-  background-size: 12px 12px;
-  border-radius: 12px;
-}
-
-.pix-heart {
-  display: grid;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  color: var(--purple);
-  background: var(--surface-raised);
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
-  font-size: 1rem;
-}
-
-.pix-corner {
-  position: absolute;
-  width: 28px;
-  height: 28px;
-  border-color: var(--silver);
-  border-style: solid;
-}
-
-.pix-corner-top-left {
-  top: 12px;
-  left: 12px;
-  border-width: 2px 0 0 2px;
-  border-radius: 5px 0 0;
-}
-
-.pix-corner-top-right {
-  top: 12px;
-  right: 12px;
-  border-width: 2px 2px 0 0;
-  border-radius: 0 5px 0 0;
-}
-
-.pix-corner-bottom-left {
-  bottom: 12px;
-  left: 12px;
-  border-width: 0 0 2px 2px;
-  border-radius: 0 0 0 5px;
-}
-
-.pix-corner-bottom-right {
-  right: 12px;
-  bottom: 12px;
-  border-width: 0 2px 2px 0;
-  border-radius: 0 0 5px;
+.support-pix img {
+  display: block;
+  width: min(100%, 232px);
+  height: auto;
+  margin-bottom: 18px;
+  border: 8px solid #fff;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
 }
 
 .support-pix > strong,
