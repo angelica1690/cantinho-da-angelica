@@ -1505,6 +1505,46 @@ h1 em {
   margin: 5px 0 0;
 }
 
+.faq-pending {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  padding: 34px;
+  border: 1px solid var(--line-strong);
+  background: linear-gradient(145deg, rgba(33, 26, 42, 0.96), rgba(24, 19, 31, 0.92));
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.faq-pending-icon {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  color: var(--purple);
+  background: rgba(169, 130, 227, 0.12);
+  border: 1px solid rgba(169, 130, 227, 0.24);
+  border-radius: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.faq-pending .section-label {
+  margin-bottom: 8px;
+}
+
+.faq-pending h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+}
+
+.faq-pending p:last-child {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   background: var(--bg-deep);
@@ -1740,6 +1780,12 @@ h1 em {
 
   .content-section {
     padding: 58px 0;
+  }
+
+  .faq-pending {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 26px;
   }
 
   .status-list article {
