@@ -6,7 +6,7 @@ O site reúne informações, andamento, instruções e downloads dos projetos de
 
 ## Site
 
-Quando o GitHub Pages estiver ativado, o endereço será:
+O site está publicado em:
 
 <https://angelica1690.github.io/cantinho-da-angelica/>
 
@@ -15,7 +15,7 @@ Quando o GitHub Pages estiver ativado, o endereço será:
 - `index.html`: página inicial e catálogo de traduções;
 - `sobre/`: apresentação do Cantinho da Angélica;
 - `projetos/legend-of-legaia/`: página do primeiro projeto;
-- `projetos/legend-of-legaia/duvidas-frequentes/`: dúvidas frequentes sobre a tradução;
+- `duvidas-frequentes/`: dúvidas gerais sobre patches e arquivos de jogos;
 - `projetos/legend-of-legaia/relatar-erro/`: página separada para o envio privado de relatos;
 - `assets/`: estilos, comportamento e identidade visual;
 - `sitemap.xml` e `robots.txt`: descoberta das páginas por mecanismos de busca.
