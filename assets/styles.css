@@ -389,6 +389,17 @@ h1 em {
     url("legend-of-legaia-cover.jpg") center / cover;
 }
 
+.game-cover-dragoon {
+  background:
+    linear-gradient(rgba(20, 14, 29, 0.4), rgba(10, 8, 14, 0.78)),
+    url("legend-of-dragoon-cover.jpg") center / cover;
+}
+
+.game-cover-project.game-cover-dragoon {
+  min-height: 350px;
+  padding: 20px;
+}
+
 .game-cover-with-art::after {
   z-index: 0;
   opacity: 1;
@@ -662,6 +673,12 @@ h1 em {
     url("legend-of-legaia-cover.jpg") center / cover;
 }
 
+.project-art-dragoon {
+  background:
+    linear-gradient(rgba(22, 15, 31, 0.38), rgba(10, 8, 14, 0.72)),
+    url("legend-of-dragoon-cover.jpg") center / cover;
+}
+
 .project-art-with-cover::after {
   z-index: 0;
   inset: 0;
@@ -680,6 +697,11 @@ h1 em {
   border: 1px solid rgba(237, 240, 244, 0.42);
   border-radius: 8px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.project-art-dragoon > img {
+  width: min(100%, 200px);
+  object-fit: contain;
 }
 
 .project-art::after {
@@ -729,6 +751,18 @@ h1 em {
   font-size: 0.84rem;
 }
 
+.project-card-body h3 {
+  margin: 12px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.project-card-body h3 + p {
+  margin-top: 10px;
+}
+
 .project-status {
   display: flex;
   align-items: center;
@@ -750,6 +784,11 @@ h1 em {
 .status-dot-planned {
   background: var(--purple);
   box-shadow: none;
+}
+
+.status-dot-in-progress {
+  background: var(--purple);
+  box-shadow: 0 0 0 4px rgba(169, 130, 227, 0.15);
 }
 
 .text-link {
@@ -1111,6 +1150,137 @@ h1 em {
   margin: 18px 0 0;
   color: var(--muted);
   font-size: 1.02rem;
+}
+
+.disc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.disc-card {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 16px;
+}
+
+.disc-card > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid rgba(237, 240, 244, 0.25);
+  border-radius: 50%;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.disc-kicker {
+  margin: 0;
+  color: var(--purple);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.disc-card h3 {
+  margin: 2px 0 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.disc-progress-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px 0 5px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.disc-progress-label strong {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.progress-track {
+  height: 7px;
+  overflow: hidden;
+  background: rgba(203, 208, 217, 0.14);
+  border-radius: 999px;
+}
+
+.progress-track > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--purple-strong), var(--silver));
+  border-radius: inherit;
+}
+
+.shared-progress {
+  padding: 28px 32px;
+  margin-top: 24px;
+  border: 1px solid var(--line);
+  background: var(--surface-raised);
+  border-radius: 16px;
+}
+
+.shared-progress .section-label {
+  margin-bottom: 7px;
+}
+
+.shared-progress h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.shared-progress ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px 22px;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+.shared-progress li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--muted-strong);
+  font-size: 0.88rem;
+}
+
+.shared-progress li::before {
+  position: absolute;
+  left: 0;
+  content: "✓";
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.project-release-note {
+  padding: 18px 22px;
+  margin: 24px 0 0;
+  border-left: 3px solid var(--purple);
+  color: var(--muted);
+  background: rgba(169, 130, 227, 0.07);
+  border-radius: 0 10px 10px 0;
+}
+
+.project-release-note strong {
+  color: var(--text);
 }
 
 .gallery-section {
@@ -1700,6 +1870,10 @@ h1 em {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .disc-grid {
+    grid-template-columns: 1fr;
+  }
+
   .support-card {
     grid-template-columns: minmax(0, 1fr) 240px;
     gap: 34px;
@@ -1770,6 +1944,10 @@ h1 em {
   .translation-gallery,
   .report-grid {
     grid-template-columns: 1fr;
+  }
+
+  .shared-progress ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .support-section {
@@ -1845,6 +2023,10 @@ h1 em {
     min-height: 310px;
   }
 
+  .game-cover-project.game-cover-dragoon {
+    min-height: 280px;
+  }
+
   .project-hero-copy h1 {
     font-size: clamp(2.75rem, 14vw, 4rem);
   }
@@ -1894,6 +2076,23 @@ h1 em {
 }
 
 @media (max-width: 430px) {
+
+  .disc-card {
+    grid-template-columns: 1fr;
+  }
+
+  .disc-card > img {
+    width: min(100%, 190px);
+    margin-inline: auto;
+  }
+
+  .shared-progress {
+    padding: 24px;
+  }
+
+  .shared-progress ul {
+    grid-template-columns: 1fr;
+  }
   .header-inner {
     min-height: 70px;
   }
