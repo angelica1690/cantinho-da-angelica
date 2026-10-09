@@ -1152,6 +1152,17 @@ h1 em {
   font-size: 1.02rem;
 }
 
+.project-updated {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+
+.project-updated time {
+  color: var(--silver-bright);
+  font-weight: 700;
+}
+
 .disc-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
