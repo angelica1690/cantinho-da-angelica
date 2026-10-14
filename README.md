@@ -25,4 +25,4 @@ O site está publicado em:
 
 Este é um projeto independente de fãs. As traduções são distribuídas apenas como patches e exigem que cada pessoa possua o jogo original.
 
-As imagens da capa e dos discos de The Legend of Dragoon são scans da edição americana disponíveis no [PSX Data Center](https://psxdatacenter.com/games/U/T/SCUS-94491.html). As capturas do jogo foram fornecidas por Angélica.
+As imagens da capa e dos discos de The Legend of Dragoon são scans da edição americana disponíveis no [PSX Data Center](https://psxdatacenter.com/games/U/T/SCUS-94491.html). A capa de Digimon World 2 também é um [scan da edição americana](https://psxdatacenter.com/games/U/D/SLUS-01193.html) do mesmo catálogo. As capturas do jogo foram fornecidas por Angélica.

@@ -692,12 +692,6 @@ h1 em {
     linear-gradient(145deg, #21162f, #15121e 65%, #38234f);
 }
 
-.project-art-planned {
-  background:
-    radial-gradient(circle at 76% 36%, rgba(169, 130, 227, 0.3), transparent 36%),
-    linear-gradient(145deg, #241a33, #15111d 68%, #342348);
-}
-
 .project-art-with-cover {
   align-items: center;
   justify-content: center;
@@ -711,6 +705,12 @@ h1 em {
   background:
     linear-gradient(rgba(22, 15, 31, 0.38), rgba(10, 8, 14, 0.72)),
     url("legend-of-dragoon-cover.jpg") center / cover;
+}
+
+.project-art-digimon {
+  background:
+    linear-gradient(rgba(22, 15, 31, 0.38), rgba(10, 8, 14, 0.72)),
+    url("digimon-world-2-cover.jpg") center / cover;
 }
 
 .project-art-with-cover::after {
