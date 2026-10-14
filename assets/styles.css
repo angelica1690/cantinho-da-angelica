@@ -274,8 +274,36 @@ svg {
   padding: 78px 0 52px;
 }
 
+.hero-with-banner {
+  padding-top: 38px;
+}
+
 .hero-inner {
   max-width: 1160px;
+}
+
+.hero-banner {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 31vw, 390px);
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.hero-intro {
+  max-width: 760px;
+  padding-top: 38px;
+}
+
+.hero-with-banner h1 {
+  font-size: clamp(2.8rem, 5.2vw, 4.6rem);
+}
+
+.hero-with-banner .hero-copy {
+  margin-top: 20px;
 }
 
 .eyebrow,
@@ -662,6 +690,12 @@ h1 em {
   background:
     radial-gradient(circle at 78% 15%, rgba(218, 214, 228, 0.34), transparent 25%),
     linear-gradient(145deg, #21162f, #15121e 65%, #38234f);
+}
+
+.project-art-planned {
+  background:
+    radial-gradient(circle at 76% 36%, rgba(169, 130, 227, 0.3), transparent 36%),
+    linear-gradient(145deg, #241a33, #15111d 68%, #342348);
 }
 
 .project-art-with-cover {
@@ -1921,6 +1955,23 @@ h1 em {
 
   .hero {
     padding: 56px 0 38px;
+  }
+
+  .hero-with-banner {
+    padding-top: 24px;
+  }
+
+  .hero-banner {
+    height: min(70vw, 300px);
+    border-radius: 14px;
+  }
+
+  .hero-intro {
+    padding-top: 28px;
+  }
+
+  .hero-with-banner h1 {
+    font-size: clamp(2.4rem, 11vw, 3.4rem);
   }
 
   h1 {

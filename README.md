@@ -2,7 +2,7 @@
 
 Traduções brasileiras de jogos de PlayStation feitas por Angélica.
 
-O site reúne informações, andamento, instruções e downloads dos projetos de tradução. **Legend of Legaia** tem um patch disponível; **The Legend of Dragoon** está em tradução.
+O site reúne informações, andamento, instruções e downloads dos projetos de tradução. **Legend of Legaia** tem um patch disponível; **The Legend of Dragoon** está em tradução; **Digimon World 2** está planejado.
 
 ## Site
 
@@ -18,7 +18,7 @@ O site está publicado em:
 - `projetos/the-legend-of-dragoon/`: andamento por CD e capturas do novo projeto;
 - `duvidas-frequentes/`: dúvidas gerais sobre patches e arquivos de jogos;
 - `projetos/legend-of-legaia/relatar-erro/`: página separada para o envio privado de relatos;
-- `assets/`: estilos, comportamento e identidade visual;
+- `assets/`: estilos, comportamento, identidade visual e banner da página inicial;
 - `sitemap.xml` e `robots.txt`: descoberta das páginas por mecanismos de busca.
 
 ## Aviso
