@@ -1272,6 +1272,59 @@ h1 em {
   border-radius: inherit;
 }
 
+.disc-review {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 14px 0 0;
+  border: 1px solid rgba(169, 130, 227, 0.34);
+  color: var(--purple);
+  background: rgba(169, 130, 227, 0.09);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.project-update {
+  padding: 28px 32px;
+  margin-top: 24px;
+  border: 1px solid var(--line);
+  background: var(--surface-raised);
+  border-radius: 16px;
+}
+
+.project-update .section-label {
+  margin-bottom: 7px;
+}
+
+.project-update h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.project-update ul {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+.project-update li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--muted-strong);
+  font-size: 0.88rem;
+}
+
+.project-update li::before {
+  position: absolute;
+  left: 0;
+  content: "✦";
+  color: var(--purple);
+}
+
 .shared-progress {
   padding: 28px 32px;
   margin-top: 24px;
@@ -2148,6 +2201,7 @@ h1 em {
     margin-inline: auto;
   }
 
+  .project-update,
   .shared-progress {
     padding: 24px;
   }
