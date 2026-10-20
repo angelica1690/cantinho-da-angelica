@@ -652,7 +652,7 @@ h1 em {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -705,12 +705,6 @@ h1 em {
   background:
     linear-gradient(rgba(22, 15, 31, 0.38), rgba(10, 8, 14, 0.72)),
     url("legend-of-dragoon-cover.jpg") center / cover;
-}
-
-.project-art-digimon {
-  background:
-    linear-gradient(rgba(22, 15, 31, 0.38), rgba(10, 8, 14, 0.72)),
-    url("digimon-world-2-cover.jpg") center / cover;
 }
 
 .project-art-with-cover::after {
@@ -815,11 +809,6 @@ h1 em {
   box-shadow: 0 0 0 4px rgba(203, 208, 217, 0.1);
 }
 
-.status-dot-planned {
-  background: var(--purple);
-  box-shadow: none;
-}
-
 .status-dot-in-progress {
   background: var(--purple);
   box-shadow: 0 0 0 4px rgba(169, 130, 227, 0.15);
@@ -835,10 +824,6 @@ h1 em {
 .text-link:hover,
 .text-link:focus-visible {
   color: #c4a9eb;
-}
-
-.text-link-muted {
-  color: var(--muted);
 }
 
 .empty-state {
