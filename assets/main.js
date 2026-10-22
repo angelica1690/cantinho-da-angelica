@@ -45,7 +45,7 @@
     });
 
     projects.forEach((project) => {
-      const shouldShow = filter === "todos" || project.dataset.status === filter;
+      const shouldShow = filter === "todos" || project.dataset.status.split(" ").includes(filter);
       project.hidden = !shouldShow;
       if (shouldShow) visibleProjects += 1;
     });
