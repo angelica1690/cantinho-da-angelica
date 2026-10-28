@@ -2,7 +2,7 @@
 
 Traduções brasileiras de jogos de PlayStation feitas por Angélica.
 
-O site reúne informações, andamento, instruções e downloads dos projetos de tradução. **Legend of Legaia** tem um patch disponível; **The Legend of Dragoon** tem patch para o CD 1, enquanto os CDs 2, 3 e 4 continuam em tradução.
+O site reúne informações, andamento, instruções e downloads dos projetos de tradução. **Legend of Legaia** tem um patch disponível; **The Legend of Dragoon** está em revisão com base na versão japonesa e, por enquanto, sem patch para download.
 
 ## Site
 
@@ -15,7 +15,7 @@ O site está publicado em:
 - `index.html`: página inicial e catálogo de traduções;
 - `sobre/`: apresentação do Cantinho da Angélica;
 - `projetos/legend-of-legaia/`: página do primeiro projeto;
-- `projetos/the-legend-of-dragoon/`: patch do CD 1, andamento por CD e capturas do projeto;
+- `projetos/the-legend-of-dragoon/`: revisão em andamento, capas dos CDs e capturas de uma etapa anterior;
 - `duvidas-frequentes/`: dúvidas gerais sobre patches e arquivos de jogos;
 - `projetos/legend-of-legaia/relatar-erro/`: página separada para o envio privado de relatos;
 - `projetos/the-legend-of-dragoon/relatar-erro/`: página de relatos para The Legend of Dragoon;
