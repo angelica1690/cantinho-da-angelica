@@ -15,7 +15,7 @@ O site está publicado em:
 - `index.html`: página inicial e catálogo de traduções;
 - `sobre/`: apresentação do Cantinho da Angélica;
 - `projetos/legend-of-legaia/`: página do primeiro projeto;
-- `projetos/the-legend-of-dragoon/`: revisão em andamento, capas dos CDs e capturas de uma etapa anterior;
+- `projetos/the-legend-of-dragoon/`: andamento da revisão por CD, gameplay no YouTube, capas dos CDs e capturas de uma etapa anterior;
 - `duvidas-frequentes/`: dúvidas gerais sobre patches e arquivos de jogos;
 - `projetos/legend-of-legaia/relatar-erro/`: página separada para o envio privado de relatos;
 - `projetos/the-legend-of-dragoon/relatar-erro/`: página de relatos para The Legend of Dragoon;
